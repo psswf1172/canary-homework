@@ -11,7 +11,8 @@
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Custom CSS -->
-	<link href="assets/css/custom.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="https://cnry-webapp-testing.s3.amazonaws.com/graphik.css">
 
 </head>
 <body>
@@ -60,111 +61,129 @@
 	<!-- /Navigation -->
 
 	<!-- Home -->
-	<div class="container jumbotron text-center" id="title">
-		<h1><small>Canary works with your insurer.</small></h1>
-	</div>
-
-	<div class="container" id="center">
-		<div class="row">
-			<div class="col-sm-4">
-				<p><strong>Start saving today.</strong></p>
-				<p>Like insurance, Canary give you peace of mind. That's why we partner with leading insurance providers to extend our commitment to protecting you and your home--all at a discount.</p>
-				<div class="row">
-					<div class="col-m-4">
-						<div class="thumbnail">
-							<img src="assets/images/logo-statefarm.png" alt="State Farm Logo">
-						</div>
-					</div>
-					<div class="col-m-4">
-						<div class="thumbnail">
-							<img src="assets/images/logo-allstate.png" alt="Allstate Logo">
-						</div>
-					</div>
-					<div class="col-m-4">
-						<div class="thumbnail">
-							<img src="assets/images/logo-liberty.png" alt="Liberty Logo">
-						</div>
-					</div>
-				</div>
-				<p>You may be eligible for a discount on your insurace premium simply for using Canary in your home.</p>
-				<break>
-				<p class="green-words"><a href="#">Check your eligibility and start saving today. (tiny arrow)</a></p>
-			</div> <!-- close column for text and logos -->
-			<div class="col-md-8">
-				<img src="assets/images/canary-fenton-3.png" alt="Serious children doing homework.">
-			</div>
+	<section id="home">
+		<div class="jumbotron text-center">
+			<div class="container title">
+			<h1>Canary works with<br>your insurer.</h1>
 		</div>
 	</div>
+	</section>
 	<!-- /Home -->
 
-	<!-- Midpage -->
-	<div class="container" id="mid-page">
-		<div class="row">
-			<div class="col-md-8">
-				<img src="assets/images/canary-fenton-1.png" alt="Happy father and son monitoring their Canary on their mobile device.">
-			</div> <!-- close col-md-8 for photo -->
+	<!-- Top Middle -->
+	<section class="top">
+		<div class="wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 savings">
+						<p><strong>Start saving today.</strong></p>
+						<p>Like insurance, Canary gives you peace of mind. That's why we partner with leading insurance providers to extend our commitment to protecting you and your home--all at a discount.</p>
+						<div class="row flex-container">
+							<div class="col-xs-4 flex-item thumbnail">
+								<img src="assets/images/logo-statefarm.png" alt="State Farm Logo" >
+							</div>
+							<div class="col-xs-4 flex-item thumbnail">
+								<img src="assets/images/logo-allstate.png" alt="Allstate Logo">
+							</div>
+							<div class="col-xs-4 flex-item thumbnail">
+								<img src="assets/images/logo-liberty.png" alt="Liberty Logo">
+							</div>
+						</div>
+						<br>
+						<p>You may be eligible for a discount on your insurance premium simply for using Canary in your home.</p>
+						<br>
+						<p class="go-time">Check your eligibility and start saving today. <span class="glyphicon glyphicon-play"></span></p>
+					</div> <!-- close savings -->
+					<div class="col-md-8 hidden-xs">
+						<img src="assets/images/canary-fenton-3.png" alt="Serious children doing homework.">
+					</div>
+				</div> <!-- row close -->
+			</div> <!-- container close-->
+		</div> <!-- wrapper close -->
+	</section>
+	<!-- /Top -->
 
-			<div class="col-md-4">
-				<p><strong>The future of smart insurance.</strong></p>
-				<p>Insurance is getting smarter. If you give us your consent, we'll share your data with our insurance partners.</p>
-				<break>
-				<p>In the future, this can unlock exclusive savings for you.</p>
-				<break>
-				<p class="green-words"><a href="#">Learn about which data we share. (tiny arrow)</a></p>
-			</div> <!-- close col-md-4 for text -->
-		</div> <!-- close row -->
-	</div>
+	<!-- Midpage -->
+	<section id="midpage">
+		<div class="wrapper">
+			<div class="container" id="mid-page">
+				<div class="row">
+					<div class="col-md-8 hidden-xs">
+						<img src="assets/images/canary-fenton-1.png" alt="Happy father and son monitoring their Canary on their mobile device." >
+					</div> <!-- close col-md-8 for photo -->
+
+					<div class="col-md-4">
+					<div class="midpage-text">
+						<p><strong>The future of smart insurance.</strong></p>
+						<p>Insurance is getting smarter. If you give us your consent, we'll share your data with our insurance partners.</p>
+						<br>
+						<p>In the future, this can unlock exclusive savings for you.</p>
+						<br>
+						<p class="go-time">Learn about which data we share.  <span class="glyphicon glyphicon-play"></span></p>
+						</div>
+					</div> <!-- close col-md-4 for text -->
+				</div> <!-- close row -->
+			</div> <!-- container close -->
+		</div> <!-- wrapper close -->
+	</section>
 	<!-- /Midpage -->
 
 	<!-- Bottom -->
-	<div class="container" id="bottom">
-		<h1>Check your discount eligibility.</h1>
+	<section id="bottom">
+		<div class="wrapper">
+			<div class="container text-center">
+				<div class="title">
+					<h1>Check your discount eligibility.</h1>
+				</div>
 
-		<div class="row">
-			<div class="col-md-4">
-				<div class="thumbnail">
-					<img src="assets/images/logo-statefarm.png" alt="State Farm Logo">
-					<div class="caption">
-						<p>The details to be revealed by hover.</p>
+				<div class="row flex-container">
+					<div class="insurer-item flex-item col-xs-4">
+						<div class="insurer-image">
+							<img src="assets/images/logo-statefarm.png" alt="State Farm Logo">
+							<div class="insurer-caption">
+								<p>The details to be revealed by hover.</p>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="thumbnail">
-					<img src="assets/images/logo-allstate.png" alt="AllState Logo">
-					<div class="caption">
-						<p>Contact your agent and request the "self-monitored theft discount.</p>
+					<div class="insurer-item flex-item col-xs-4">
+						<div class="insurer-image">
+							<img src="assets/images/logo-allstate.png" alt="AllState Logo">
+							<div class="insurer-caption">
+								<p>Contact your agent and request the "self-monitored theft discount.</p>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="thumbnail">
-					<img src="assets/images/logo-liberty.png" alt="Liberty Logo">
-					<div class="caption">
-						<p>The details to be revealed by hover.</p>
+					<div class="insurer-item flex-item col-xs-4">
+						<div class="insurer-image">
+							<img src="assets/images/logo-liberty.png" alt="Liberty Logo">
+							<div class="insurer-caption">
+								<p>The details to be revealed by hover.</p>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-		</div> <!--close row with logos -->
+				</div> <!--close row with logos -->
+				<br>
+				<div class="container">
+					<p><strong>Have a different insurance?</strong></p>
+					<p>Contact your agent or customer service representative and ask if there is a discount for using Canary, an all-in-one home security system.</p>
+				</div> <!-- text container close -->
 
-		<div class="container">
-			<p><strong>Have a different insurance?</strong></p>
-			<p>Contact your agent or customer service representative and ask if there is a discount for using Canary, an all-in-one home security system.</p>
-		</div>
-	</div>
+			</div> <!-- bottom container close -->
+		</div> <!-- wrapper close -->
+	</section>
 	<!-- /Bottom -->
 
 	<!-- Footer -->
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div>
+				<div class="hidden-xs footer-image col-xs-6">
 					<img src="assets/images/ce-team.png" alt="The Canary Engineering team">
 				</div>
-				<div>
+				<div class="footer-text col-xs-6">
 					<h3>Still have questions?</h3>
 					<p>Call or email us 24 hours a day, 7 days a week.</p>
-					<button>Get In Touch</button>
+					<button class="button">Get In Touch</button>
 				</div>
 			</div>
 		</div>

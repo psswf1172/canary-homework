@@ -1,15 +1,131 @@
+@font-face {
+  font-family: 'Graphik';
+  src: url("https://cnry-webapp-testing.s3.amazonaws.com/fonts/Graphik-Light-Web.eot");
+  src: url("https://cnry-webapp-testing.s3.amazonaws.com/fonts/Graphik-Light-Web.eot?#iefix") format("embedded-opentype"),
+       url("https://cnry-webapp-testing.s3.amazonaws.com/fonts/Graphik-Light-Web.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
 
-/*@import url("slider.css");
-@import url("vertical.css");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400");
-@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");
-*/
-.h1-title{
-	font-size: 32px;
-	font-weight: light;
+p {
+	font-family: 'Graphik', serif;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url("https://cnry-webapp-testing.s3.amazonaws.com/fonts/Graphik-Semibold-Web.eot");
+  src: url("https://cnry-webapp-testing.s3.amazonaws.com/fonts/Graphik-Semibold-Web.eot?#iefix") format("embedded-opentype"),
+       url("https://cnry-webapp-testing.s3.amazonaws.com/fonts/Graphik-Semibold-Web.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2 {
+	font-family: 'Graphik';
+	font-size: 24px;
+}
+
+h3 {
+	font-family: 'Graphik';
+	font-size: 18px;
+}
+
+.nav {
+	font-family: 'Graphik', serif;
+}
+
+.jumbotron {
+	display: flex;
+	margin-top: 40px;
+	background-color: white;
+}
+
+.title {
+	padding: 50px;
+	font-family: 'Graphik';
+}
+
+.top {
+	padding: 50px;
+}
+
+.savings {
+	padding-right: 40px ;
+}
+
+
+.go-time {
+	color: green;
+}
+
+.glyphicon {
+	font-size: 10px;
 }
 
 #bottom {
 	background-color: #F8F8F8;
+	margin-top: 50px;
+}
+
+.flex-container {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+}
+.flex-item {
+  padding: 5px;
+  margin: auto;  
+}
+
+.thumbnail{
+	border-color: white;
+}
+
+.insurer-item{
+	width: 350px;
+	height: 250px;
+	padding: 90px;
+	margin: 10px;
+	background-color: white;
+	border-style: solid;
+	border-color: grey;
+	border-width: 1px;
+	text-align: center;
+}
+
+.midpage-text {
+	padding-right: 25px;
+}
+
+.footer {
+	background-color: rgb(61, 194, 215);
+}
+
+.footer-image{
+	position: absolute;
+	left: 0px;
+}
+
+.footer-text {
+	font-family: 'Graphik', serif;
+	font-color: white;
+}
+
+.button {
+	background-color: white;
+	border: none;
+	text-align: center;
+	display: inline-block;
+	font-size: 14px;
+	font-color: rgb(61, 194, 215);
+	border-radius: 24px;
 }
