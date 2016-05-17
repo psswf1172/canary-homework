@@ -5,3 +5,11 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");
 */
+.h1-title{
+	font-size: 32px;
+	font-weight: light;
+}
+
+#bottom {
+	background-color: #F8F8F8;
+}

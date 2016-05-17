@@ -8,6 +8,7 @@
 	<title>Canary Web Development Internship Homework by Jen Abella</title>
 
 	<!-- put the plug-ins here (css/font-awesome, css/animate.css) -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Custom CSS -->
 	<link href="assets/css/custom.css" rel="stylesheet">
@@ -16,25 +17,21 @@
 <body>
 
 	<!-- Preloader -->
-	<div class="page-loader">
+<!-- 	<div class="page-loader">
 		<div class="loader">Loading...</div>
-	</div>
+	</div> -->
 	<!-- /Preloader -->
 
 	<!-- Navigation -->
-	<nav class="navbar">
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="custom-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html" src="assets/css/logo-canary.svg"></a>
+				<a class="navbar-brand" href="#"> 
+					<img src="assets/images/logo-canary.svg" alt="Canary Logo">
+				</a>
 			</div>
 
-			<div class="collapse navbar-collapse" id="custom-collapse">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-left">
 					<li>
 						<a href="#">How It Works</a>
@@ -52,82 +49,108 @@
 						<a href="#">Help</a>
 					</li>					
 				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#">Log In</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</nav>
 	<!-- /Navigation -->
 
 	<!-- Home -->
-	<div>
-		<h1>Canary works with your insurer.</h1>
+	<div class="container jumbotron text-center" id="title">
+		<h1><small>Canary works with your insurer.</small></h1>
 	</div>
 
-	<div>
-		<p><strong>Start saving today.</strong></p>
-		<p>Like insurance, Canary give you peace of mind. That's why we partner with leading insurance providers to extend our commitment to protecting you and your home--all at a discount.</p>
-		<div>
-			<img src="assets/images/logo-statefarm.png">
-			<img src="assets/images/logo-allstate.png">
-			<img src="assets/images/logo-liberty.png">
+	<div class="container" id="center">
+		<div class="row">
+			<div class="col-sm-4">
+				<p><strong>Start saving today.</strong></p>
+				<p>Like insurance, Canary give you peace of mind. That's why we partner with leading insurance providers to extend our commitment to protecting you and your home--all at a discount.</p>
+				<div class="row">
+					<div class="col-m-4">
+						<div class="thumbnail">
+							<img src="assets/images/logo-statefarm.png" alt="State Farm Logo">
+						</div>
+					</div>
+					<div class="col-m-4">
+						<div class="thumbnail">
+							<img src="assets/images/logo-allstate.png" alt="Allstate Logo">
+						</div>
+					</div>
+					<div class="col-m-4">
+						<div class="thumbnail">
+							<img src="assets/images/logo-liberty.png" alt="Liberty Logo">
+						</div>
+					</div>
+				</div>
+				<p>You may be eligible for a discount on your insurace premium simply for using Canary in your home.</p>
+				<break>
+				<p class="green-words"><a href="#">Check your eligibility and start saving today. (tiny arrow)</a></p>
+			</div> <!-- close column for text and logos -->
+			<div class="col-md-8">
+				<img src="assets/images/canary-fenton-3.png" alt="Serious children doing homework.">
+			</div>
 		</div>
-		<p>You may be eligible for a discount on your insurace premium simply for using Canary in your home.</p>
-		<break>
-		<p class="green-words"><a href="#">Check your eligibility and start saving today. (tiny arrow)</a></p>
-	</div>
-	<div>
-		<img src="assets/images/canary-fenton-3.png">
 	</div>
 	<!-- /Home -->
 
 	<!-- Midpage -->
-	<div>
-		<img src="assets/images/canary-fenton-1.png">
-	</div>
-	<div>
-		<p><strong>The future of smart insurance.</strong></p>
-		<p>Insurance is getting smarter. If you give us your consent, we'll share your data with our insurance partners.</p>
-		<break>
-		<p>In the future, this can unlock exclusive savings for you.</p>
-		<break>
-		<p class="green-words"><a href="#">Learn about which data we share. (tiny arrow)</a></p>
+	<div class="container" id="mid-page">
+		<div class="row">
+			<div class="col-md-8">
+				<img src="assets/images/canary-fenton-1.png" alt="Happy father and son monitoring their Canary on their mobile device.">
+			</div> <!-- close col-md-8 for photo -->
+
+			<div class="col-md-4">
+				<p><strong>The future of smart insurance.</strong></p>
+				<p>Insurance is getting smarter. If you give us your consent, we'll share your data with our insurance partners.</p>
+				<break>
+				<p>In the future, this can unlock exclusive savings for you.</p>
+				<break>
+				<p class="green-words"><a href="#">Learn about which data we share. (tiny arrow)</a></p>
+			</div> <!-- close col-md-4 for text -->
+		</div> <!-- close row -->
 	</div>
 	<!-- /Midpage -->
 
 	<!-- Bottom -->
-	<div>
+	<div class="container" id="bottom">
 		<h1>Check your discount eligibility.</h1>
-	</div>
-	<div>
-		<ul>
-			<li>
-				<div class="box">
-					<img src="assets/images/logo-statefarm.png">
+
+		<div class="row">
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<img src="assets/images/logo-statefarm.png" alt="State Farm Logo">
+					<div class="caption">
+						<p>The details to be revealed by hover.</p>
+					</div>
 				</div>
-				<div class="box caption">
-					<p>The details to be revealed by hover.</p>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<img src="assets/images/logo-allstate.png" alt="AllState Logo">
+					<div class="caption">
+						<p>Contact your agent and request the "self-monitored theft discount.</p>
+					</div>
 				</div>
-			</li>
-			<li>
-				<div class="box">
-					<img src="assets/images/logo-allstate.png">
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<img src="assets/images/logo-liberty.png" alt="Liberty Logo">
+					<div class="caption">
+						<p>The details to be revealed by hover.</p>
+					</div>
 				</div>
-				<div class="box caption">
-					<p>Contact your agent and request the "self-monitored theft discount.</p>
-				</div>
-			</li>
-			<li>
-				<div class="box">
-					<img src="assets/images/logo-liberty.png">
-				</div>
-				<div class="box caption">
-					<p>The details to be revealed by hover.</p>
-				</div>
-			</li>
-		</ul>
-	</div>
-	<div>
-		<p><strong>Have a different insurance?</strong></p>
-		<p>Contact your agent or customer service representative and ask if there is a discount for using Canary, an all-in-one home security system.</p>
+			</div>
+		</div> <!--close row with logos -->
+
+		<div class="container">
+			<p><strong>Have a different insurance?</strong></p>
+			<p>Contact your agent or customer service representative and ask if there is a discount for using Canary, an all-in-one home security system.</p>
+		</div>
 	</div>
 	<!-- /Bottom -->
 
@@ -136,7 +159,7 @@
 		<div class="container">
 			<div class="row">
 				<div>
-					<img src="assets/images/ce-team.png">
+					<img src="assets/images/ce-team.png" alt="The Canary Engineering team">
 				</div>
 				<div>
 					<h3>Still have questions?</h3>
@@ -149,5 +172,7 @@
 	<!-- /Footer -->
 
 <!-- JavaScript files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
