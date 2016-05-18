@@ -1,3 +1,27 @@
+* {
+	box-sizing: border-box;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
 @font-face {
   font-family: 'Graphik';
   src: url("https://cnry-webapp-testing.s3.amazonaws.com/fonts/Graphik-Light-Web.eot");
@@ -5,6 +29,11 @@
        url("https://cnry-webapp-testing.s3.amazonaws.com/fonts/Graphik-Light-Web.woff") format("woff");
   font-weight: 300;
   font-style: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
 }
 
 p {
@@ -97,35 +126,54 @@ h3 {
 	margin: 10px;
 	background-color: white;
 	border-style: solid;
-	border-color: grey;
+	border-color: #d3d3d3;
 	border-width: 1px;
 	text-align: center;
+}
+
+.insurer-caption {
+	color: white;
+	-webkit-transition: color 2s;
+	transition: color 2s;
+	padding-top: 20px;
+}
+.insurer-caption:hover {
+	color: black;
 }
 
 .midpage-text {
 	padding-right: 25px;
 }
 
-.footer {
+.different {
+	padding: 50px;
+}
+
+footer {
 	background-color: rgb(61, 194, 215);
+	text-align: center;
+	color: white;
 }
 
-.footer-image{
+#footer-image{
+	margin-left: -50px;
+}
+
+#footer-text {
 	position: absolute;
-	left: 0px;
-}
-
-.footer-text {
-	font-family: 'Graphik', serif;
-	font-color: white;
+	width: 450px;
+	height: 450px;
+	padding: 90px 10px; 
+	margin-top: 50px;
 }
 
 .button {
 	background-color: white;
 	border: none;
-	text-align: center;
+	color: rgb(61, 194, 215);
 	display: inline-block;
 	font-size: 14px;
 	font-color: rgb(61, 194, 215);
 	border-radius: 24px;
+	margin-bottom: 50px;
 }
