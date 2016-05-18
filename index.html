@@ -17,12 +17,6 @@
 </head>
 <body>
 
-	<!-- Preloader -->
-<!-- 	<div class="page-loader">
-		<div class="loader">Loading...</div>
-	</div> -->
-	<!-- /Preloader -->
-
 	<!-- Navigation -->
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
@@ -50,7 +44,7 @@
 						<a href="#">Help</a>
 					</li>					
 				</ul>
-				<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right hidden-xs">
 					<li>
 						<a href="#">Log In</a>
 					</li>
@@ -61,21 +55,23 @@
 	<!-- /Navigation -->
 
 	<!-- Home -->
-	<section id="home">
-		<div class="jumbotron text-center">
-			<div class="container title">
-			<h1>Canary works with<br>your insurer.</h1>
+	<section class="hero-text">
+		<div class="container">
+			<div class="row">
+				<div class="col col-mobile-12 col-desktop-10 col-centered text-center">
+					<h1>Canary works with<br>your insurer.</h1>
+				</div>
+			</div>
 		</div>
-	</div>
 	</section>
 	<!-- /Home -->
 
-	<!-- Top Middle -->
+	<!-- Top -->
 	<section class="top">
 		<div class="wrapper">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-4 savings">
+					<div class="col-sm-4 top-text">
 						<p><strong>Start saving today.</strong></p>
 						<p>Like insurance, Canary gives you peace of mind. That's why we partner with leading insurance providers to extend our commitment to protecting you and your home--all at a discount.</p>
 						<div class="row flex-container">
@@ -93,9 +89,9 @@
 						<p>You may be eligible for a discount on your insurance premium simply for using Canary in your home.</p>
 						<br>
 						<p class="go-time">Check your eligibility and start saving today. <span class="glyphicon glyphicon-play"></span></p>
-					</div> <!-- close savings -->
+					</div> <!-- close top-text -->
 					<div class="col-md-8 hidden-xs">
-						<img src="assets/images/canary-fenton-3.png" alt="Serious children doing homework.">
+						<img src="assets/images/canary-fenton-3.png" alt="A serious family checking their eligibility so they can start saving with Canary today.">
 					</div>
 				</div> <!-- row close -->
 			</div> <!-- container close-->
@@ -104,25 +100,25 @@
 	<!-- /Top -->
 
 	<!-- Midpage -->
-	<section id="midpage">
+	<section class="midpage">
 		<div class="wrapper">
-			<div class="container" id="mid-page">
+			<div class="container">
 				<div class="row">
 					<div class="col-md-8 hidden-xs">
 						<img src="assets/images/canary-fenton-1.png" alt="Happy father and son monitoring their Canary on their mobile device." >
 					</div> <!-- close col-md-8 for photo -->
 
 					<div class="col-md-4">
-					<div class="midpage-text">
-						<p><strong>The future of smart insurance.</strong></p>
-						<p>Insurance is getting smarter. If you give us your consent, we'll share your data with our insurance partners.</p>
-						<br>
-						<p>In the future, this can unlock exclusive savings for you.</p>
-						<br>
-						<p class="go-time">Learn about which data we share.  <span class="glyphicon glyphicon-play"></span></p>
+						<div class="midpage-text">
+							<p><strong>The future of smart insurance.</strong></p>
+							<p>Insurance is getting smarter. If you give us your consent, we'll share your data with our insurance partners.</p>
+							<br>
+							<p>In the future, this can unlock exclusive savings for you.</p>
+							<br>
+							<p class="go-time">Learn about which data we share.  <span class="glyphicon glyphicon-play"></span></p>
 						</div>
-					</div> <!-- close col-md-4 for text -->
-				</div> <!-- close row -->
+					</div> <!-- close midpage text -->
+				</div> <!-- row close -->
 			</div> <!-- container close -->
 		</div> <!-- wrapper close -->
 	</section>
@@ -164,38 +160,29 @@
 				</div> <!--close row with logos -->
 				<br>
 				<div class="container">
-					<div class="different">
+					<div class="contact">
 						<p><strong>Have a different insurance?</strong></p>
 						<p>Contact your agent or customer service representative and ask if there is a discount for using Canary, an all-in-one home security system.</p>
 					</div>
-				</div> <!-- text container close -->
+				</div> <!-- contact close -->
 
-			</div> <!-- bottom container close -->
+			</div> <!-- bottom close -->
 		</div> <!-- wrapper close -->
 	</section>
 	<!-- /Bottom -->
 
-	<!-- Footer -->
-	<footer class="footer">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-6 hidden-xs">
-					<div id="footer-image">
-						<img src="assets/images/ce-team.png" class="img-responsive" alt="The Canary Engineering team">
-					</div>
-				</div>
-				<div class="col-xs-6">
-					<div id="footer-text text-center">
-						<h2>Still have questions?</h2>
-						<p>Call or email us 24 hours a day, 7 days a week.</p>
-						<br>
-						<button class="button btn-lg">Get In Touch</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- /Footer -->
+	<!-- Support -->
+	<section class="support text-center">
+		<div class="support-image hidden-xs">
+			<img src="assets/images/ce-team.png" class="img-responsive" alt="The Canary Engineering team">
+		</div> <!-- support-image close -->
+		<div class="support-text">
+			<h2 class="support-title text-center">Still have questions?</h2>
+			<p>Call or email us 24 hours a day, 7 days a week.</p>
+				<button class="button btn-lg">Get In Touch</button>
+		</div> <!-- support-text close -->
+	</section>
+	<!-- /Support -->
 
 <!-- JavaScript files -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

@@ -1,7 +1,9 @@
+/*  General styling  */
 * {
 	box-sizing: border-box;
 }
-/* For desktop: */
+
+/* Adjustable for desktop and mobile screens */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -22,6 +24,7 @@
     }
 }
 
+/*  Fonts  */
 @font-face {
   font-family: 'Graphik';
   src: url("https://cnry-webapp-testing.s3.amazonaws.com/fonts/Graphik-Light-Web.eot");
@@ -31,15 +34,6 @@
   font-style: normal;
 }
 
-body {
-	margin: 0;
-	padding: 0;
-}
-
-p {
-	font-family: 'Graphik', serif;
-}
-
 @font-face {
   font-family: 'Graphik';
   src: url("https://cnry-webapp-testing.s3.amazonaws.com/fonts/Graphik-Semibold-Web.eot");
@@ -47,6 +41,11 @@ p {
        url("https://cnry-webapp-testing.s3.amazonaws.com/fonts/Graphik-Semibold-Web.woff") format("woff");
   font-weight: 600;
   font-style: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
 }
 
 h2 {
@@ -59,43 +58,46 @@ h3 {
 	font-size: 18px;
 }
 
+p {
+	font-family: 'Graphik', serif;
+}
+
+/*  Navigation styling -- needs to be centered on collapse */
+.navbar-collapse {
+	text-align: center;
+	display: block!important;
+}
+
+.navbar-nav>li {
+	display: inline-block;
+	float: none;
+}
+
 .nav {
 	font-family: 'Graphik', serif;
 }
 
-.jumbotron {
+/*  Section styling  */
+.hero-text {
 	display: flex;
-	margin-top: 40px;
-	background-color: white;
-}
-
-.title {
-	padding: 50px;
-	font-family: 'Graphik';
+	margin: auto;
+	text-align: center;
+	position: relative;
+	padding-top: 85px;
+	padding-bottom: 70px;
+	background-color: #ffffff;
+	font-family: 'Graphik', serif;
 }
 
 .top {
-	padding: 50px;
+	padding: 20px;
 }
 
-.savings {
+.top-text {
 	padding-right: 40px ;
 }
 
-
-.go-time {
-	color: green;
-}
-
-.glyphicon {
-	font-size: 10px;
-}
-
-#bottom {
-	background-color: #F8F8F8;
-	margin-top: 50px;
-}
-
+/*  Flex box to keep logos in line on small screens  */
 .flex-container {
 	padding: 0;
 	margin: 0;
@@ -115,8 +117,37 @@ h3 {
   margin: auto;  
 }
 
-.thumbnail{
-	border-color: white;
+/* Prevent thumbnail edges from showing  */
+.thumbnail {
+	border-color: #ffffff;
+}
+
+/*  Call to action text  */
+.go-time {
+	color: #3ea072;
+}
+.glyphicon {
+	font-size: 10px;
+}
+
+/*  Midpage styles */
+section.midpage {
+	padding: 20px;
+}
+
+.midpage-text {
+	padding-right: 25px;
+}
+
+/*  Bottom section styles */
+#bottom {
+	background-color: #F8F8F8;
+	margin-top: 50px;
+}
+
+.title {
+	font-family: 'Graphik';
+	padding: 50px;
 }
 
 .insurer-item{
@@ -124,7 +155,7 @@ h3 {
 	height: 250px;
 	padding: 90px;
 	margin: 10px;
-	background-color: white;
+	background-color: #ffffff;
 	border-style: solid;
 	border-color: #d3d3d3;
 	border-width: 1px;
@@ -132,48 +163,70 @@ h3 {
 }
 
 .insurer-caption {
-	color: white;
+	color: #ffffff;
 	-webkit-transition: color 2s;
 	transition: color 2s;
 	padding-top: 20px;
 }
+/*  Animation for insurer details */
 .insurer-caption:hover {
-	color: black;
+	color: #000000;
 }
 
-.midpage-text {
-	padding-right: 25px;
-}
-
-.different {
+.contact {
 	padding: 50px;
 }
 
-footer {
-	background-color: rgb(61, 194, 215);
-	text-align: center;
-	color: white;
-}
-
-#footer-image{
-	margin-left: -50px;
-}
-
-#footer-text {
-	position: absolute;
-	width: 450px;
+/*  Support section  */
+section.support {
+	position: relative;
 	height: 450px;
-	padding: 90px 10px; 
-	margin-top: 50px;
+	color: #ffffff;
+	background: #4fccde;
+	width: 100%;
+	clear: both;
+}
+
+.text-center {
+	text-align: center!important;
+	line-height: 1.5;
+}
+
+.support-image {
+	position: absolute;
+	background-image: url(/assets/images/ce-team.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 450px;
+	float: left;
+	width: 50%;
+	top: 0;
+}
+
+.support-text {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 50%;
+	right: 0;
 }
 
 .button {
-	background-color: white;
+	background-color: #ffffff;
 	border: none;
-	color: rgb(61, 194, 215);
+	color: #3dc2d7;
 	display: inline-block;
-	font-size: 14px;
-	font-color: rgb(61, 194, 215);
-	border-radius: 24px;
+	font-family: 'Graphik', serif;
+	font-size: 16px;
+	width: 175px;
+	border-radius: 50px;
 	margin-bottom: 50px;
+	margin-top: 15px;
+}
+.button:hover {
+	-webkit-transition: color 2s;
+	transition: color 2s;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	color: #ffffff;
 }
