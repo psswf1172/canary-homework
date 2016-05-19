@@ -69,6 +69,19 @@ p {
 }
 
 /*  Navigation styling -- needs to be centered on collapse */
+.navbar {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	text-align: center;
+}
+
+.navbar > .item {
+	-webkit-flex: auto;
+	flex: 1 1 auto;
+}
+
 .navbar-collapse {
 	text-align: center;
 	display: block!important;
